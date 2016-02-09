@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html lang = "en-US">
+
+    <head>
+        <% include partials/head.ejs %>
+    </head>
+
+    <body class = "apex-hide-nav apex-menu-scroll">
+
+
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+        <!-- !Hero element -->
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+        <div id = "apex-hero">
+            <div id = "apex-hero-inner">
+
+                <!-- The hero background rotator -->
+                <div id = "hero-bg-rotator" class = "mtphr-rotator">
+                    <div class = "mtphr-rotator-resource-container">
+                        <div id = "home-slide-1" class = "mtphr-rotator-resource" data-mtphr-parallax-speed = "6"></div>
+                        <div id = "home-slide-2" class = "mtphr-rotator-resource" data-mtphr-parallax-speed = "6"></div>
+                        <div id = "home-slide-3" class = "mtphr-rotator-resource" data-mtphr-parallax-speed = "6"></div>
+                    </div>
+
+                </div>
+
+                <!-- Background gradient overlay -->
+                <div id = "apex-hero-gradient"></div>
+
+                <!-- Background pattern overlay -->
+                <div id = "apex-hero-overlay"></div>
+
+                <div class = "container">
+                    <div class = "apex-hero-content">
+
+                        <!-- The hero logo -->
+                        <div id = "hero-logo" class = "apex-hero-element">
+                            <a href = "/">
+                                <img src = "assets/images/spice-mixer-logo.png" alt = "Apex" width = "176" height = "153">
+                            </a>
+                        </div>
+
+                        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+                        <!-- !Start Mtphr Rotator -->
+                        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+                        <div id = "hero-rotator" class = "mtphr-rotator apex-hero-element">
+                            <div class = "mtphr-rotator-resource-container">
+                                <div class = "mtphr-rotator-resource">SPICE MIXER PROJECT (S9)</div>
+                                <div class = "mtphr-rotator-resource">ECE4012L5A</div>
+                                <div class = "mtphr-rotator-resource">DR. WHIT SMITH</div>
+                            </div>
+                            <div class="mtphr-rotator-navigation">
+                                <a href="#0" rel="nofollow"><i class="apex-icon-circle"></i><i class="apex-icon-circle-blank"></i></a>
+                                <a href="#1" rel="nofollow"><i class="apex-icon-circle"></i><i class="apex-icon-circle-blank"></i></a>
+                                <a href="#2" rel="nofollow"><i class="apex-icon-circle"></i><i class="apex-icon-circle-blank"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+                        <!-- !End Mtphr Rotator -->
+                        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+                        <!-- The hero menu -->
+                        <nav class = "apex-hero-menu-container apex-hero-element">
+                            <ul class = "clearfix">
+                                <li><a href = "#about"><i class = "apex-icon-gear"></i>About</a></li>
+                                <li><a href = "#team"><i class = "apex-icon-members"></i>Team</a></li>
+                                <li><a href="#document"><i class="apex-icon-write"></i>Documents</a></li>
+                            </ul>
+                        </nav>
+
+                    </div>
+                    <!-- .apex-hero-content -->
+                </div>
+                <!-- .container -->
+
+            </div>
+            <!-- #apex-hero-inner -->
+        </div>
+        <!-- #apex-hero -->
+
+
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+        <!-- !Site navigation -->
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+        <header id = "site-navigation">
+            <div id = "site-navigation-contents">
+                <div class = "container">
+                    <!-- Put your site's logo here -->
+                    <a id = "logo" href = "/">
+                        <img src = "assets/images/spice-mixer-logo.png" style="width: 25px; display: inline; margin-right: 10px"> <strong>Spice Mixer</strong>
+                    </a>
+                    <a id = "mobile-menu-toggle" href = "#"><i class = "apex-icon-mobile-menu"></i></a>
+                    <!-- The primary menu -->
+                    <nav class = "apex-primary-menu-container">
+                        <ul>
+                            <li class = "hidden-xs"><a href = "/">Home</a></li>
+                            <li><a href = "#about"><i class = "apex-icon-gear"></i>About</a></li>
+                            <li><a href = "#team"><i class = "apex-icon-members"></i>Team</a></li>
+                            <li><a href = "#document"><i class = "apex-icon-polaroid-1"></i>Portfolio</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- .container -->
+            </div>
+            <!-- #site-header-contents -->
+        </header>
+        <!-- #site-header -->
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+        <!-- !Main wrapper -->
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+        <div id = "wrapper">
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+            <!-- !Main content -->
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+            <div id = "main" role = "main">
+                <% include sections/about.ejs %>
+                <% include sections/team.ejs %>
+                <% include sections/documents.ejs %>
+            </div>
+            <!-- #main -->
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+            <!-- !Site Footer -->
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+            <footer id = "site-footer" role = "contentinfo">
+                <% include partials/footer.ejs %>
+            </footer>
+            <!-- #site-footer -->
+        </div>
+        <!-- #wrapper -->
+
+
+        <a id = "apex-totop-float" href = "#"><i class = "apex-icon-arrow-up"></i></a>
+        <% include partials/script.ejs %>
+    </body>
+</html>
